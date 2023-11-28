@@ -12,12 +12,13 @@ const Home = () => {
     return (
         <>
             <Header />
-            <section className="h-[82vh] w-full">
-                <div className="flex justify-center items-center h-full w-full flex-col gap-5">
+            <section className="h-[82vh] w-[100vw]">
+                <div className="flex justify-center items-center h-full flex-col gap-5">
                     <img src="/assets/googlelogo.png" alt="" />
                     <div className="flex border border-white/40 justify-start items-center py-1 px-4 rounded-full gap-5 hover:bg-white/10 hover:border-transparent transition duration-200">
                         <FaMagnifyingGlass />
-                        <input type="search" className=" outline-none w-full bg-transparent" />
+                        <input type="search" className="focus:border-r focus:border-white/40 px-2 outline-none w-[30vw] bg-transparent py-[5px]" />
+                        
                         <FaMicrophone className="cursor-pointer" title="Search by voice" />
                         <FaCamera  className="cursor-pointer" title="Search by image"/>
                     </div>

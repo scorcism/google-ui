@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: arial, sans-serif;
 }
 
 body {
@@ -18,4 +16,15 @@ body {
 
 a:hover {
   text-decoration: underline;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  background:
+    linear-gradient(45deg, rgba(131, 127, 127, 0) 0%, rgba(0, 0, 0, 0) 43%, #e8eaed 45%, #e8eaed 55%, rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(135deg, transparent 0%, transparent 43%, #e8eaed 45%,  #e8eaed 55%, transparent 57%, transparent 100%);
+  border-radius: 50%;
+  cursor: pointer;
 }
